@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    position: absolute;
+    background:#F2F2F2;
+    height: 100vh;
+    width: 100%;
+    transition: 0.3s; /*light-mode*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #434343;
+}
+    
+/* dark-mode */
+
+
+.dark-card {
+    background-color: #1b1b1b82 !important;
+    transition: 0.1s;
+}
+.dark {
+    background-color: #0D0D0D;
+    color:#fff;
+}
+
+
+/* cards */
+
+main.cards {
+    display: flex;
+    padding: 30px;
+}
+
+main.cards section.cards  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 480px;
+    margin-left: 30px;
+}
+
+
+main.cards section.cards:first-child{
+    margin-left: 0px;
+}
+
+main.cards section.cards .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.cards img {
+    width: 100%;
+} 
+
+main.cards section.cards h3 {
+    margin: 16px 0;
+    font-size: 100%;
+}
+
+main.cards section.cards span {
+    font-weight: 300;
+    max-width: 250px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+
+/* buttom */
+
+main.cards section.cards button {
+    padding: 0.5rem 1rem;
+    border-radius: 32px;
+    border:0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 800;  
+    color:white; 
+}
+
+/* contact buttom */
+main.cards section.cards.contact button {
+    background:linear-gradient(to right, #9F66FF, #DFCBFF);
+}
+main.cards section.cards.contact {
+    box-shadow: 20px 20px 50px -30px #DBC4FF;
+}
+
+/* shop buttom */
+main.cards section.cards.shop button {
+    background:linear-gradient(to right, #3E8AFF, #BBDEFF);
+}
+
+main.cards section.cards.shop {
+    box-shadow: 20px 20px 50px -30px #AFD6FF;
+}
+
+/* about buttom */
+
+main.cards section.cards.about button {
+    background:linear-gradient(to right, #FE5F8F, #FFC7D9);
+}
+
+main.cards section.cards.about {
+    box-shadow: 20px 20px 50px -30px #FFC1D5;
+}
+
+/* responsividade */
+
+@media only screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.cards {
+        margin-left: 0;
+        margin-bottom: 32px ;
+    }
+
+    main.cards section.cards:last-child {
+        margin-bottom: 0;
+    }
+}
